@@ -1,0 +1,25 @@
+:host {
+  display: grid;
+  grid-template-areas:
+    "b a"
+    "b c";
+  grid-template-rows: 70px calc(100vh - 70px);
+  grid-template-columns: 280px 1fr;
+  background: #E5E5E5;
+}
+
+.header {
+  grid-area: a;
+  background: #FFFFFF;
+  border-bottom: solid 1px #E4E7EC;
+}
+
+.main {
+  grid-area: c;
+  padding: 24px 40px;
+}
+
+.sidebar {
+  grid-area: b;
+  background: #101928;
+}
